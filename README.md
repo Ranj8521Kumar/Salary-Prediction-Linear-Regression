@@ -101,8 +101,9 @@ Finally, let's make it interactive by taking user input:
 ```python
 years_of_experience = float(input("Enter years of experience: "))
 predicted_salary = regressor.predict([[years_of_experience]])
-print("Predicted Salary:", predicted_salary[0])
+print("predicted Salary for the years of ",years_of_experience, "is", predicted_salary)
 ```
+###OutPut: predicted Salary for the years of  15.0 is [159385.23868361]
 
 ## Example
 You can predict the salary for a given number of years of experience by running the script and entering the number of years when prompted.
