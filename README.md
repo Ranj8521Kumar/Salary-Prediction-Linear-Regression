@@ -69,7 +69,7 @@ Now, we use the trained model to make predictions on the test set:
 y_pred = regressor.predict(X_test)
 ```
 
-### Step 6: Visualizing the Results
+### Step 6: Visualizing the Training Set Results
 We visualize the training set results to see the regression line:
 ```python
 plt.scatter(X_train, y_train, color='red')
@@ -79,6 +79,22 @@ plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/fe4069d2-234d-466b-9609-8fb89b80fa51)
+
+### Step 7: Visualizing the Test Set Results
+We visualize the Test set results to see the regression line:
+```python
+plt.scatter(X_test, y_test, color='red')
+plt.plot(X_train, regressor.predict(X_train), color='blue')
+plt.title('Salary vs Experience (Training set)')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/13a8dd60-415b-4e72-bf37-0b40b3148920)
+
+
 
 ### Step 8: User Input Prediction
 Finally, let's make it interactive by taking user input:
